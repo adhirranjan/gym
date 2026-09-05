@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Advanced HIIT Program</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root{--ember:#e0532b;--ember-deep:#b53d1c;--amber:#e8a33d;--plum:#2a1e2c;
+--ink:#241c22;--muted:#6b5f66;--bg:#faf6f2;--card:#fff;--line:#ece2da;--chip:#f4ece6;--good:#2f7d3f;
+--shadow:0 1px 2px rgba(40,20,20,.06),0 8px 22px rgba(40,20,20,.06)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--ember:#ff7043;--ember-deep:#ff8a5c;
+--amber:#f2b45a;--plum:#efe4ea;--ink:#efe6ec;--muted:#a99ba4;--bg:#171216;--card:#211a20;
+--line:#342a32;--chip:#2b222a;--good:#6fce82;--shadow:0 1px 2px rgba(0,0,0,.4),0 8px 22px rgba(0,0,0,.35)}}
+:root[data-theme=dark]{--ember:#ff7043;--ember-deep:#ff8a5c;--amber:#f2b45a;--plum:#efe4ea;
+--ink:#efe6ec;--muted:#a99ba4;--bg:#171216;--card:#211a20;--line:#342a32;--chip:#2b222a;--good:#6fce82;
+--shadow:0 1px 2px rgba(0,0,0,.4),0 8px 22px rgba(0,0,0,.35)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Inter",system-ui,-apple-system,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:840px;margin:0 auto;padding:clamp(20px,4vw,44px) clamp(16px,4vw,30px) 72px}
+h1,h2,h3{font-family:"Oswald",system-ui,sans-serif;text-wrap:balance;margin:0}
+header.head{border-bottom:3px solid var(--ember);padding-bottom:18px;margin-bottom:8px}
+.eyebrow{font-family:"Oswald";text-transform:uppercase;letter-spacing:.16em;font-weight:600;font-size:.8rem;color:var(--ember-deep)}
+h1{font-size:clamp(2rem,5.5vw,3rem);font-weight:700;text-transform:uppercase;line-height:.98;margin:.1em 0 .1em;color:var(--plum)}
+.sub{color:var(--muted);font-size:1rem}
+
+.callout{background:var(--chip);border:1px solid var(--line);border-left:4px solid var(--amber);
+  border-radius:10px;padding:14px 18px;margin:20px 0}
+.callout h3{font-size:1.05rem;color:var(--plum);text-transform:uppercase;margin-bottom:6px}
+.callout ul{margin:0;padding-left:1.1rem}
+.callout li{margin:.2rem 0;font-size:.92rem}
+.callout li b{color:var(--ember-deep)}
+
+.day{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);
+  padding:clamp(15px,3vw,24px);margin-top:20px}
+.day h2{font-size:1.35rem;font-weight:700;color:var(--plum);text-transform:uppercase;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline}
+.day h2 .dow{color:var(--ember-deep)}
+.day h2 .foc{font-family:"Inter";font-weight:500;font-size:.82rem;text-transform:none;color:var(--muted)}
+.tbl-wrap{overflow-x:auto;margin:12px 0 6px}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.04em;font-size:.78rem;color:var(--ember-deep)}
+td:nth-child(2),td:nth-child(3),th:nth-child(2),th:nth-child(3){font-variant-numeric:tabular-nums;white-space:nowrap}
+tbody tr:last-child td{border-bottom:none}
+.fin{margin-top:10px;background:color-mix(in srgb,var(--ember) 9%,var(--card));border:1px solid var(--line);
+  border-radius:9px;padding:9px 13px;font-size:.9rem}
+.fin b{font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.03em;color:var(--ember-deep);font-size:.82rem}
+.prog{font-size:.85rem;color:var(--muted);margin-top:8px}
+.prog b{color:var(--good);text-transform:uppercase;font-size:.74rem;letter-spacing:.03em}
+
+.grid-tbl table td:first-child{font-weight:600}
+.rest-day{display:flex;align-items:center;gap:12px;border:1px dashed var(--line);border-radius:14px;
+  padding:16px 20px;margin-top:20px;color:var(--muted)}
+.rest-day b{color:var(--good);font-family:"Oswald";text-transform:uppercase}
+footer{margin-top:34px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.8rem}
+a.home{color:var(--ember-deep);text-decoration:none;font-weight:600}
+a.home:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="head">
+    <div class="eyebrow">Advanced · Bodyweight + Plyometric</div>
+    <h1>Advanced HIIT Program</h1>
+    <div class="sub">The beginner plan, progressed — harder variations, longer work, more rounds, shorter rest, real finishers.</div>
+  </header>
+
+  <div class="callout">
+    <h3>Advanced Protocol</h3>
+    <ul>
+      <li><b>Interval:</b> 40–45 sec work / 15 sec rest (was 20s / rest as needed)</li>
+      <li><b>Rounds:</b> 4–5 per circuit (was 2–3) · 60–90 sec between rounds</li>
+      <li><b>Intensity:</b> RPE 8–9 — near-max on work intervals, controlled on strength moves</li>
+      <li><b>Session:</b> warm-up 8–10 min → work 30–40 min → finisher → cool-down 5–7 min</li>
+      <li><b>Overload:</b> each week add a round, cut 5 sec rest, or add tempo/load. <b>Deload every 4th week</b> (drop to 3 rounds).</li>
+    </ul>
+  </div>
+
+  <div class="callout grid-tbl">
+    <h3>Weekly Structure</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Day</th><th>Focus</th></tr></thead>
+      <tbody>
+        <tr><td>Mon</td><td>Full Body Power (plyo + strength)</td></tr>
+        <tr><td>Tue</td><td>Lower Body + Core Strength</td></tr>
+        <tr><td>Wed</td><td>Cardio HIIT / Conditioning (max effort)</td></tr>
+        <tr><td>Thu</td><td>Active Recovery + Core</td></tr>
+        <tr><td>Fri</td><td>Full Body Metabolic</td></tr>
+        <tr><td>Sat</td><td>Athletic HIIT + Conditioning</td></tr>
+        <tr><td>Sun</td><td>Rest / mobility</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="day">
+    <h2><span class="dow">Mon</span> Full Body Power</h2>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Exercise</th><th>Work / Reps</th><th>Rounds</th></tr></thead>
+      <tbody>
+        <tr><td>Plyo jacks / star jumps</td><td>40 sec</td><td>4</td></tr>
+        <tr><td>Jump squats</td><td>15 reps</td><td>4</td></tr>
+        <tr><td>Push-ups (feet-elevated → archer)</td><td>12–15 reps</td><td>4</td></tr>
+        <tr><td>Cross-body mountain climbers</td><td>45 sec</td><td>4</td></tr>
+        <tr><td>Plank shoulder taps</td><td>40 sec</td><td>4</td></tr>
+      </tbody>
+    </table></div>
+    <div class="fin"><b>Finisher</b> — Burpees, AMRAP 3 min (max quality reps)</div>
+    <div class="prog"><b>Progress:</b> full push-ups → decline → archer → one-arm negatives.</div>
+  </div>
+
+  <div class="day">
+    <h2><span class="dow">Tue</span> Lower Body + Core Strength</h2>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Exercise</th><th>Work / Reps</th><th>Rounds</th></tr></thead>
+      <tbody>
+        <tr><td>Bulgarian split squat</td><td>10 / leg</td><td>4</td></tr>
+        <tr><td>Jump lunges (alternating)</td><td>20 total</td><td>4</td></tr>
+        <tr><td>Single-leg glute bridge</td><td>12 / leg</td><td>4</td></tr>
+        <tr><td>Hanging leg raises / V-ups</td><td>12–15 reps</td><td>4</td></tr>
+        <tr><td>Hollow-body hold</td><td>40 sec</td><td>4</td></tr>
+      </tbody>
+    </table></div>
+    <div class="fin"><b>Finisher</b> — Wall sit, 3 × 45 sec (add pulses last 15 sec)</div>
+    <div class="prog"><b>Progress:</b> squats → pistol progressions; add a loaded backpack for split squats & bridges.</div>
+  </div>
+
+  <div class="day">
+    <h2><span class="dow">Wed</span> Cardio HIIT — Conditioning <span class="foc">30s max / 20s rest · 5 rounds</span></h2>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Exercise</th><th>Work</th><th>Rounds</th></tr></thead>
+      <tbody>
+        <tr><td>Sprint high knees</td><td>30 sec</td><td>5</td></tr>
+        <tr><td>Fast butt kicks</td><td>30 sec</td><td>5</td></tr>
+        <tr><td>Double-unders / speed skipping</td><td>45 sec</td><td>5</td></tr>
+        <tr><td>Broad jumps (walk back)</td><td>8 reps</td><td>5</td></tr>
+        <tr><td>Shuttle sprints (10 m)</td><td>30 sec</td><td>5</td></tr>
+      </tbody>
+    </table></div>
+    <div class="fin"><b>Finisher</b> — Tabata jump squats: 20 sec on / 10 off × 8 (4 min)</div>
+    <div class="prog"><b>Progress:</b> shorten rest to 15 sec, or add a 6th round, before adding exercises.</div>
+  </div>
+
+  <div class="day">
+    <h2><span class="dow">Thu</span> Active Recovery + Core</h2>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Exercise</th><th>Work / Reps</th><th>Sets</th></tr></thead>
+      <tbody>
+        <tr><td>Incline walk / easy jog</td><td>20–25 min</td><td>1</td></tr>
+        <tr><td>Mobility flow (hips / T-spine / ankles)</td><td>8–10 min</td><td>1</td></tr>
+        <tr><td>RKC plank (max tension)</td><td>30 sec</td><td>3</td></tr>
+        <tr><td>Copenhagen plank</td><td>20 sec / side</td><td>2</td></tr>
+        <tr><td>Dead bug</td><td>12 / side</td><td>3</td></tr>
+      </tbody>
+    </table></div>
+    <div class="prog"><b>Purpose:</b> keep it genuinely easy — RPE 4–5. This is what lets Wed &amp; Fri stay near-max.</div>
+  </div>
+
+  <div class="day">
+    <h2><span class="dow">Fri</span> Full Body Metabolic</h2>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Exercise</th><th>Work / Reps</th><th>Rounds</th></tr></thead>
+      <tbody>
+        <tr><td>Burpees</td><td>12 reps</td><td>4</td></tr>
+        <tr><td>Squat to press (backpack / DB)</td><td>15 reps</td><td>4</td></tr>
+        <tr><td>Pike / decline push-ups</td><td>12 reps</td><td>4</td></tr>
+        <tr><td>Spiderman mountain climbers</td><td>45 sec</td><td>4</td></tr>
+        <tr><td>Plank to push-up</td><td>40 sec</td><td>4</td></tr>
+      </tbody>
+    </table></div>
+    <div class="fin"><b>Finisher</b> — EMOM 10 min: 10 jump squats + 8 push-ups every minute</div>
+    <div class="prog"><b>Progress:</b> load the squat-to-press; move pike push-ups toward a wall handstand press.</div>
+  </div>
+
+  <div class="day">
+    <h2><span class="dow">Sat</span> Athletic HIIT + Conditioning</h2>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Exercise</th><th>Work / Reps</th><th>Rounds</th></tr></thead>
+      <tbody>
+        <tr><td>Tuck jumps</td><td>12 reps</td><td>4</td></tr>
+        <tr><td>Squat pulse → jump</td><td>20 reps</td><td>4</td></tr>
+        <tr><td>Bear crawl (fwd / back)</td><td>40 sec</td><td>4</td></tr>
+        <tr><td>Skater jumps</td><td>20 total</td><td>4</td></tr>
+        <tr><td>Plank with reach-out</td><td>40 sec</td><td>4</td></tr>
+      </tbody>
+    </table></div>
+    <div class="fin"><b>Finisher</b> — 5-min AMRAP: 5 burpees · 10 jump squats · 15 mountain climbers</div>
+    <div class="prog"><b>Progress:</b> chase a higher AMRAP round count week to week — that's your scoreboard.</div>
+  </div>
+
+  <div class="rest-day"><b>Sun</b><span>Rest &amp; recover — light mobility, walking, hydration and sleep. Recovery is where the adaptation happens.</span></div>
+
+  <footer>Advanced progression of a bodyweight HIIT plan. Train at RPE 8–9, keep rest honest, and deload every 4th week. <a class="home" href="index.html">&larr; All workout plans</a></footer>
+</div>
+</body>
+</html>
